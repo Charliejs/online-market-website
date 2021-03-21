@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Carl's Market-User Center</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <style type="text/css">
+        .site_con .form_group #is_default{
+            width:25px;
+	        height:23px;
+	        border:1px solid #ddd;
+	        float: none;
+	        outline:none;
+	        margin-top:0px;
+	        text-indent:10px;
+            vertical-align: middle;
+
+        }
+        .site_con #div_is_fault{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">Welcome to Carl's Market!</div>
+			<div class="fr">
+				<div class="login_info fl">
+					WELCOME：<em>Sonia Ofure</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="login.html">Login</a>
+					<span>|</span>
+					<a href="register.html">Register</a>
+				</div>
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="user_center_info.html">User Center</a>
+					<span>|</span>
+					<a href="cart.html">my shopping cart</a>
+					<span>|</span>
+					<a href="user_center_order.html">My Order</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img src="../static/images/logo.png"></a>
+		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;User Center</div>
+		<div class="search_con fr">
+			<input type="text" class="input_text fl" name="" placeholder="Search products">
+			<input type="button" class="input_btn fr" name="" value="search for">
+		</div>		
+	</div>
+
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>User Center</h3>
+			<ul>
+				<li><a href="user_center_info.html">· Personal information</a></li>
+				<li><a href="user_center_order.html">· All orders</a></li>
+				<li><a href="user_center_site.html" class="active">· Shipping address</a></li>
+			</ul>
+		</div>
+		<div class="right_content clearfix">
+				<h3 class="common_title2">Shipping address</h3>
+
+				<div class="site_con">Cell phone
+					<dl>
+						<dt>default address：</dt>
+						<dd>Area 1 182****7528</dd>
+					</dl>					
+				</div>
+				<h3 class="common_title2">Edit address</h3>
+				<div class="site_con">
+					<form>
+						<div class="form_group">
+							<label>Recipient：</label>
+							<input type="text" name="">
+						</div>
+						<div class="form_group form_group2">
+							<label>Address：</label>
+							<textarea class="site_area"></textarea>
+						</div>
+						<div class="form_group">
+							<label>Postcode：</label>
+							<input type="text" name="">
+						</div>
+						<div class="form_group">
+							<label>Cell phone：</label>
+							<input type="text" name="">
+						</div>
+                        <div class="form_group" id="div_is_fault">
+							<label>As the default address:</label>
+							<input type="radio" id="is_default" name="is_default" checked value="1">Yes
+                            <input type="radio" id="is_default" name="is_default" value="0">No
+						</div>
+
+						<input type="submit" name="" value="提交" class="info_submit">
+					</form>
+				</div>
+		</div>
+	</div>
+
+
+
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">about Us</a>
+			<span>|</span>
+			<a href="#">contact us</a>
+			<span>|</span>
+			<a href="#">talent acquisition</a>
+			<span>|</span>
+			<a href="#">Links</a>		
+		</div>
+		<p>CopyRight © 2021 EHIDIGITAL Co., Ltd. All Rights Reserved</p>
+		<p>phone：010-****888 </p>
+	</div>
+	
+</body>
+</html>

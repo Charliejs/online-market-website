@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Carl's Market-Submit Order</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">Welcome to Carl's Market!</div>
+			<div class="fr">
+				<div class="login_info fl">
+					Welcome：<em>Zhang Shan</em>
+				</div>
+				<div class="login_btn fl">
+					<a href="login.html">Login</a>
+					<span>|</span>
+					<a href="register.html">Register</a>
+				</div>
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="user_center_info.html">User Center</a>
+					<span>|</span>
+					<a href="cart.html">My Shopping Cart</a>
+					<span>|</span>
+					<a href="user_center_order.html">My Order</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img src="../static/images/logo.png"></a>
+		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;Submit Order</div>
+		<div class="search_con fr">
+			<input type="text" class="input_text fl" name="" placeholder="Search products">
+			<input type="button" class="input_btn fr" name="" value="Search for">
+		</div>		
+	</div>
+	
+	<h3 class="common_title">Confirm your delivery address</h3>
+
+	<div class="common_list_con clearfix">
+		<dl>
+			<dt>Send to：</dt>
+			<dd><input type="radio" name="" checked="">Zhongguancun Software Park, No. 8 Dongbei Wangxi Road, Haidian District, Beijing (collected by Li Si)182****7528</dd>
+		</dl>
+		<a href="user_center_site.html" class="edit_site">Edit shipping address</a>
+
+	</div>
+	
+	<h3 class="common_title">payment method</h3>	
+	<div class="common_list_con clearfix">
+		<div class="pay_style_con clearfix">
+			<input type="radio" name="pay_style" checked>
+			<label class="cash">Cash on delivery</label>
+			<input type="radio" name="pay_style">
+			<label class="weixin">WeChat Pay</label>
+			<input type="radio" name="pay_style">
+			<label class="zhifubao"></label>
+			<input type="radio" name="pay_style">
+			<label class="bank">Bank card payment</label>
+		</div>
+	</div>
+
+	<h3 class="common_title">Product list</h3>
+	
+	<div class="common_list_con clearfix">
+		<ul class="goods_list_th clearfix">
+			<li class="col01">product name</li>
+			<li class="col02">Commodity unit</li>
+			<li class="col03">Commodity price</li>
+			<li class="col04">Quantity</li>
+			<li class="col05">Subtotal</li>		
+		</ul>
+		<ul class="goods_list_td clearfix">
+			<li class="col01">1</li>			
+			<li class="col02"><img src="../static/images/goods/goods012.jpg"></li>
+			<li class="col03">Kiwi</li>
+			<li class="col04">500g</li>
+			<li class="col05">25.80 Naira</li>
+			<li class="col06">1</li>
+			<li class="col07">25.80 Naira</li>	
+		</ul>
+		<ul class="goods_list_td clearfix">
+			<li class="col01">2</li>			
+			<li class="col02"><img src="../static/images/goods/goods003.jpg"></li>
+			<li class="col03">Daxing greenhouse strawberry</li>
+			<li class="col04">500g</li>
+			<li class="col05">16.80 Naira</li>
+			<li class="col06">1</li>
+			<li class="col07">16.80 Naira</li>	
+		</ul>
+	</div>
+
+	<h3 class="common_title">Total amount settlement</h3>
+
+	<div class="common_list_con clearfix">
+		<div class="settle_con">
+			<div class="total_goods_count">Total<em>2</em>Items, total amount<b>42.60 Naira</b></div>
+			<div class="transit">Shipping：<b>10Naira</b></div>
+			<div class="total_pay">Payment：<b>52.60Naira</b></div>
+		</div>
+	</div>
+
+	<div class="order_submit clearfix">
+		<a href="javascript:;" id="order_btn">Submit Order</a>
+	</div>	
+
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">about Us</a>
+			<span>|</span>
+			<a href="#">contact us</a>
+			<span>|</span>
+			<a href="#">talent acquisition</a>
+			<span>|</span>
+			<a href="#">Links</a>		
+		</div>
+		<p>CopyRight © 2021 EHIDIGITAL Co., Ltd. All Rights Reserved</p>
+		<p>phone：010-****888 </p>
+	</div>
+
+	<div class="popup_con">
+		<div class="popup">
+			<p>Order submission successful！</p>
+		</div>
+		
+		<div class="mask"></div>
+	</div>
+	<script type="text/javascript" src="../static/js/jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$('#order_btn').click(function() {
+			localStorage.setItem('order_finish',2);
+
+			$('.popup_con').fadeIn('fast', function() {
+
+				setTimeout(function(){
+					$('.popup_con').fadeOut('fast',function(){
+						window.location.href = 'index.html';
+					});	
+				},3000)
+				
+			});
+		});
+	</script>
+</body>
+</html>
